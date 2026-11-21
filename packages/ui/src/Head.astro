@@ -1,0 +1,25 @@
+---
+import "./base.css";
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  image?: string;
+}
+const { title, description, canonical, image } = Astro.props;
+---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<meta name="theme-color" content="#292a2d" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+{image && <meta property="og:image" content={image} />}
+{image && <meta name="twitter:card" content="summary_large_image" />}
+<script is:inline src="/theme.js"></script>

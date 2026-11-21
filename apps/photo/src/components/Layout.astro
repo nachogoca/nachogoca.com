@@ -1,0 +1,29 @@
+---
+import Head from "@nachogoca/ui/Head.astro";
+import Header from "@nachogoca/ui/Header.astro";
+import Footer from "@nachogoca/ui/Footer.astro";
+import "../styles/photo.css";
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+}
+const { title, description, image } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+---
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <Head title={title} description={description} canonical={canonical} image={image} />
+  </head>
+  <body>
+    <Header logoText="photo" logoHref="/" links={[{ href: "https://nachogoca.com", label: "About" }]} />
+    <main class="photo-main">
+      <slot />
+    </main>
+    <Footer>
+      <span> · All photographs &copy; Nacho González, all rights reserved.</span>
+    </Footer>
+  </body>
+</html>

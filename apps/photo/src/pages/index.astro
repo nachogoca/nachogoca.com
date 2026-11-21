@@ -1,0 +1,28 @@
+---
+import Layout from "../components/Layout.astro";
+import Picture from "../components/Picture.astro";
+import { series, coverOf, src } from "../lib/manifest";
+
+const first = series[0];
+const ogImage = first ? src(coverOf(first), 1600, "jpg") : undefined;
+---
+<Layout title="Nacho González — Photography" description="Photographs by Nacho González." image={ogImage}>
+  <h1 class="visually-hidden">Photography</h1>
+  {series.length === 0 ? (
+    <p class="empty">New work coming soon.</p>
+  ) : (
+    <ul class="series-grid">
+      {series.map((s, i) => (
+        <li class="series-card">
+          <a href={`/${s.slug}/`}>
+            <Picture photo={coverOf(s)} sizes="(min-width: 1200px) 440px, (min-width: 800px) 50vw, 100vw" eager={i < 2} />
+            <div class="series-card__meta">
+              <span class="series-card__title">{s.title}</span>
+              <span class="series-card__year">{s.year}</span>
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+</Layout>

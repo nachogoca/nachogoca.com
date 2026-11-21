@@ -1,0 +1,98 @@
+---
+import Layout from "../components/Layout.astro";
+import Picture from "../components/Picture.astro";
+import { series, coverOf, src, formatDate, type Series } from "../lib/manifest";
+
+export function getStaticPaths() {
+  return series.map((s, i) => ({
+    params: { slug: s.slug },
+    props: { s, newer: series[i - 1], older: series[i + 1] },
+  }));
+}
+
+interface Props {
+  s: Series;
+  newer?: Series;
+  older?: Series;
+}
+const { s, newer, older } = Astro.props;
+---
+<Layout
+  title={`${s.title} — Nacho González Photography`}
+  description={s.description ?? `${s.title}, ${s.year}. Photographs by Nacho González.`}
+  image={src(coverOf(s), 1600, "jpg")}
+>
+  <header class="series-head">
+    <h1>{s.title}</h1>
+    <time datetime={s.date}>{formatDate(s.date)}</time>
+    {s.description && <p>{s.description}</p>}
+  </header>
+
+  <ol class="sequence" data-lightbox-group>
+    {s.images.map((p, i) => (
+      <li>
+        <figure>
+          <a href={src(p, p.widths.at(-1)!, "jpg")} data-lightbox data-index={i}>
+            <Picture photo={p} sizes="(min-width: 1400px) 1368px, 100vw" eager={i === 0} />
+          </a>
+          {p.caption && <figcaption>{p.caption}</figcaption>}
+        </figure>
+      </li>
+    ))}
+  </ol>
+
+  <nav class="series-nav" aria-label="Series">
+    <span>{newer && <a href={`/${newer.slug}/`}>&larr; {newer.title}</a>}</span>
+    <a href="/">All series</a>
+    <span>{older && <a href={`/${older.slug}/`}>{older.title} &rarr;</a>}</span>
+  </nav>
+
+  <dialog class="lightbox" aria-label="Photo viewer">
+    <img alt="" />
+    <button class="lb-close" type="button" aria-label="Close">&times;</button>
+    <button class="lb-prev" type="button" aria-label="Previous">&larr;</button>
+    <button class="lb-next" type="button" aria-label="Next">&rarr;</button>
+  </dialog>
+</Layout>
+
+<script>
+  // Progressive enhancement: without JS, each photo links to its full-size JPEG.
+  const links = [...document.querySelectorAll<HTMLAnchorElement>("[data-lightbox]")];
+  const dialog = document.querySelector<HTMLDialogElement>("dialog.lightbox");
+  if (dialog && links.length) {
+    const img = dialog.querySelector("img")!;
+    let index = 0;
+    const show = (i: number) => {
+      index = (i + links.length) % links.length;
+      const inner = links[index]!.querySelector("img")!;
+      img.src = inner.currentSrc || links[index]!.href;
+      img.srcset = inner.srcset;
+      img.sizes = "100vw";
+      img.alt = inner.alt;
+    };
+    links.forEach((a, i) =>
+      a.addEventListener("click", (e) => {
+        if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+        e.preventDefault();
+        show(i);
+        dialog.showModal();
+      }),
+    );
+    dialog.querySelector(".lb-close")!.addEventListener("click", () => dialog.close());
+    dialog.querySelector(".lb-prev")!.addEventListener("click", () => show(index - 1));
+    dialog.querySelector(".lb-next")!.addEventListener("click", () => show(index + 1));
+    img.addEventListener("click", () => dialog.close());
+    dialog.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight") show(index + 1);
+      if (e.key === "ArrowLeft") show(index - 1);
+    });
+    let x0: number | null = null;
+    dialog.addEventListener("touchstart", (e) => (x0 = e.touches[0]!.clientX), { passive: true });
+    dialog.addEventListener("touchend", (e) => {
+      if (x0 === null) return;
+      const dx = e.changedTouches[0]!.clientX - x0;
+      if (Math.abs(dx) > 50) show(index + (dx < 0 ? 1 : -1));
+      x0 = null;
+    });
+  }
+</script>

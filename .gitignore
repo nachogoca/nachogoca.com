@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.astro/
+.cache/
+apps/photo/public/_local-img/
+*.env
+.env*
+.DS_Store

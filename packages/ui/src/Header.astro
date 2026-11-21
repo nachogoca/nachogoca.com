@@ -1,0 +1,25 @@
+---
+interface Props {
+  logoText: string;
+  logoHref: string;
+  links?: { href: string; label: string; current?: boolean }[];
+}
+const { logoText, logoHref, links = [] } = Astro.props;
+---
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href={logoHref} class="logo" aria-label="Home">
+      <span class="logo__mark">&gt;</span>
+      <span class="logo__text">{logoText}</span>
+      <span class="logo__cursor" aria-hidden="true"></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      {links.map((l) => (
+        <a href={l.href} aria-current={l.current ? "page" : undefined}>{l.label}</a>
+      ))}
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light/dark theme">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22 3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7 13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>

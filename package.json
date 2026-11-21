@@ -1,0 +1,14 @@
+{
+  "name": "nachogoca.com",
+  "private": true,
+  "type": "module",
+  "workspaces": ["apps/*", "packages/*", "tools/*"],
+  "scripts": {
+    "dev:home": "npm run dev -w apps/home",
+    "dev:photo": "npm run dev -w apps/photo",
+    "build": "npm run build -w apps/home && npm run build -w apps/photo",
+    "check": "npm run check -w apps/home && npm run check -w apps/photo",
+    "publish-photos": "node tools/publish-photos/publish.mjs"
+  },
+  "engines": { "node": ">=22" }
+}
