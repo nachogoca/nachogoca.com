@@ -1,14 +1,23 @@
 # nachogoca.com
 
-Static sites built with Astro. Cloudflare Pages deploys them on every push to `main`, and each PR gets a preview URL.
+Static sites built with Astro, served as Cloudflare **Workers static assets** (no Worker code runs).
+Cloudflare Workers Builds deploys on every push to `main`; other branches get a preview URL.
 
 | App | Domain | Source |
 |-----|--------|--------|
-| home | nachogoca.com | `apps/home` |
-| photo gallery | photo.nachogoca.com | `apps/photo` |
+| home (Worker `nachogoca-com`) | nachogoca.com (www → 301) | `apps/home` |
+| photo gallery (Worker `nachogoca-photo`) | photo.nachogoca.com | `apps/photo` |
 | images (R2 bucket `nachogoca-photos`) | img.nachogoca.com | written by `tools/publish-photos` |
 
 The shared look (colours, header, footer, theme toggle) lives in `packages/ui`.
+
+Workers Builds settings, per Worker (the name must match `"name"` in that app's `wrangler.jsonc`):
+
+| | home | photo |
+|---|---|---|
+| Build | `npm run build -w apps/home` | `npm run build -w apps/photo` |
+| Deploy | `npx wrangler deploy --config apps/home/wrangler.jsonc` | `npx wrangler deploy --config apps/photo/wrangler.jsonc` |
+| Preview | `npx wrangler versions upload --config apps/home/wrangler.jsonc` | `npx wrangler versions upload --config apps/photo/wrangler.jsonc` |
 
 ## Publishing photos
 
@@ -55,7 +64,7 @@ npm run build
 ```
 
 The home page has one optional env var, `PUBLIC_CONTACT_EMAIL`, which adds an email icon. Set it in
-Cloudflare Pages → Settings → Variables, or locally in `apps/home/.env` (gitignored).
+the `nachogoca-com` Worker → Settings → Build → Variables, or locally in `apps/home/.env` (gitignored).
 
 ## Security
 
