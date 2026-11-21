@@ -1,7 +1,7 @@
 {
   "version": 1,
   "imageBase": "https://img.nachogoca.com",
-  "generatedAt": "2026-11-21T21:22:35.417Z",
+  "generatedAt": "2026-11-21T21:28:17.289Z",
   "series": [
     {
       "slug": "scotland-2025",
@@ -81,60 +81,6 @@
           "color": "#585858",
           "alt": "Scotland, 2025",
           "date": "2025-05-04"
-        },
-        {
-          "id": "0050a147f00a",
-          "key": "2025/05_scotland/0050a147f00a",
-          "w": 2400,
-          "h": 1600,
-          "widths": [
-            800,
-            1600,
-            2400
-          ],
-          "formats": [
-            "avif",
-            "jpg"
-          ],
-          "color": "#e8e8e8",
-          "alt": "Scotland, 2025",
-          "date": "2025-05-04"
-        },
-        {
-          "id": "af75afbd3ce3",
-          "key": "2025/05_scotland/af75afbd3ce3",
-          "w": 2400,
-          "h": 1600,
-          "widths": [
-            800,
-            1600,
-            2400
-          ],
-          "formats": [
-            "avif",
-            "jpg"
-          ],
-          "color": "#f8f8f8",
-          "alt": "Scotland, 2025",
-          "date": "2025-05-05"
-        },
-        {
-          "id": "02c1feeca773",
-          "key": "2025/05_scotland/02c1feeca773",
-          "w": 2400,
-          "h": 1600,
-          "widths": [
-            800,
-            1600,
-            2400
-          ],
-          "formats": [
-            "avif",
-            "jpg"
-          ],
-          "color": "#484848",
-          "alt": "Scotland, 2025",
-          "date": "2025-05-05"
         },
         {
           "id": "e7da54e96196",
