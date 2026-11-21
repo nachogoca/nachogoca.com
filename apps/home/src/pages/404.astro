@@ -1,0 +1,15 @@
+---
+import Head from "@nachogoca/ui/Head.astro";
+import Header from "@nachogoca/ui/Header.astro";
+import Footer from "@nachogoca/ui/Footer.astro";
+---
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head><Head title="Not found — Nacho González" description="Page not found." canonical="https://nachogoca.com/404" /></head>
+  <body>
+    <Header logoText="home" logoHref="/" links={[{ href: "https://photo.nachogoca.com", label: "Photography" }]} />
+    <main class="nf"><h1>404</h1><p>Nothing here. <a href="/">Go home</a>.</p></main>
+    <Footer />
+  </body>
+</html>
+<style>.nf { flex: 1 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 16px; }</style>

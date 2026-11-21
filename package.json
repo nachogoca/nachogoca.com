@@ -2,7 +2,11 @@
   "name": "nachogoca.com",
   "private": true,
   "type": "module",
-  "workspaces": ["apps/*", "packages/*", "tools/*"],
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "tools/*"
+  ],
   "scripts": {
     "dev:home": "npm run dev -w apps/home",
     "dev:photo": "npm run dev -w apps/photo",
@@ -10,5 +14,10 @@
     "check": "npm run check -w apps/home && npm run check -w apps/photo",
     "publish-photos": "node tools/publish-photos/publish.mjs"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "wrangler": "^4.166.0"
+  }
 }
