@@ -1,6 +1,52 @@
 {
   "version": 1,
   "imageBase": "https://img.nachogoca.com",
-  "generatedAt": null,
-  "series": []
+  "generatedAt": "2026-11-21T20:37:23.103Z",
+  "series": [
+    {
+      "slug": "tromso-norway-2026",
+      "title": "Tromsø",
+      "date": "2026-03-25",
+      "year": 2026,
+      "cover": "bb646c425410",
+      "images": [
+        {
+          "id": "bb646c425410",
+          "key": "2026/03_tromso_norway/bb646c425410",
+          "w": 2400,
+          "h": 1350,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#c8c8c8",
+          "alt": "Tromsø, 2026",
+          "date": "2026-03-25"
+        },
+        {
+          "id": "c91497baa1b9",
+          "key": "2026/03_tromso_norway/c91497baa1b9",
+          "w": 2400,
+          "h": 1597,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#d8d8e8",
+          "alt": "Tromsø, 2026",
+          "date": "2026-03-25"
+        }
+      ]
+    }
+  ]
 }
