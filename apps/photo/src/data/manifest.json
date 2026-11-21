@@ -1,8 +1,485 @@
 {
   "version": 1,
   "imageBase": "https://img.nachogoca.com",
-  "generatedAt": "2026-11-21T20:37:23.103Z",
+  "generatedAt": "2026-11-21T21:22:35.417Z",
   "series": [
+    {
+      "slug": "scotland-2025",
+      "title": "Scotland",
+      "date": "2025-05-03",
+      "year": 2025,
+      "cover": "0c18ffad925c",
+      "images": [
+        {
+          "id": "0c18ffad925c",
+          "key": "2025/05_scotland/0c18ffad925c",
+          "w": 2400,
+          "h": 3600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#282838",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-03"
+        },
+        {
+          "id": "1e77d4de83e8",
+          "key": "2025/05_scotland/1e77d4de83e8",
+          "w": 2400,
+          "h": 3600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#c8c8d8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-03"
+        },
+        {
+          "id": "bd13242c7aa7",
+          "key": "2025/05_scotland/bd13242c7aa7",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#c8d8d8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-03"
+        },
+        {
+          "id": "6ac076ac0816",
+          "key": "2025/05_scotland/6ac076ac0816",
+          "w": 2400,
+          "h": 3599,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#585858",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-04"
+        },
+        {
+          "id": "0050a147f00a",
+          "key": "2025/05_scotland/0050a147f00a",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#e8e8e8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-04"
+        },
+        {
+          "id": "af75afbd3ce3",
+          "key": "2025/05_scotland/af75afbd3ce3",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#f8f8f8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-05"
+        },
+        {
+          "id": "02c1feeca773",
+          "key": "2025/05_scotland/02c1feeca773",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#484848",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-05"
+        },
+        {
+          "id": "e7da54e96196",
+          "key": "2025/05_scotland/e7da54e96196",
+          "w": 2400,
+          "h": 1800,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#d8e8f8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "6071d43e3bb2",
+          "key": "2025/05_scotland/6071d43e3bb2",
+          "w": 2400,
+          "h": 1800,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#b8d8e8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "9956446a5e7e",
+          "key": "2025/05_scotland/9956446a5e7e",
+          "w": 2400,
+          "h": 3200,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#d8e8f8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "77bf20a8b05f",
+          "key": "2025/05_scotland/77bf20a8b05f",
+          "w": 2400,
+          "h": 3200,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#c8d8e8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "7b6433155c06",
+          "key": "2025/05_scotland/7b6433155c06",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#e8e8f8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "5ff49ad4e512",
+          "key": "2025/05_scotland/5ff49ad4e512",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#e8e8e8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "717e74b6804e",
+          "key": "2025/05_scotland/717e74b6804e",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#e8e8e8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "177d0743dcfd",
+          "key": "2025/05_scotland/177d0743dcfd",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#e8e8e8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "92f7d931d9f8",
+          "key": "2025/05_scotland/92f7d931d9f8",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#e8e8e8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "d6d776d8bbd1",
+          "key": "2025/05_scotland/d6d776d8bbd1",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#e8e8e8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "9aea4ab38b11",
+          "key": "2025/05_scotland/9aea4ab38b11",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#f8f8f8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "d93e927eeddd",
+          "key": "2025/05_scotland/d93e927eeddd",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#d8d8e8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "4e57e7fd3e4f",
+          "key": "2025/05_scotland/4e57e7fd3e4f",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#f8f8f8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "6ce87098bdd6",
+          "key": "2025/05_scotland/6ce87098bdd6",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#e8e8e8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "e33bf9e10dce",
+          "key": "2025/05_scotland/e33bf9e10dce",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#e8e8e8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-06"
+        },
+        {
+          "id": "e2b5ea8d4b55",
+          "key": "2025/05_scotland/e2b5ea8d4b55",
+          "w": 2400,
+          "h": 1800,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#b8d8f8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-07"
+        },
+        {
+          "id": "671d6a612764",
+          "key": "2025/05_scotland/671d6a612764",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#e8e8e8",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-07"
+        },
+        {
+          "id": "c8e258a19352",
+          "key": "2025/05_scotland/c8e258a19352",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#98b838",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-07"
+        },
+        {
+          "id": "706b7dbb8f8b",
+          "key": "2025/05_scotland/706b7dbb8f8b",
+          "w": 2400,
+          "h": 1600,
+          "widths": [
+            800,
+            1600,
+            2400
+          ],
+          "formats": [
+            "avif",
+            "jpg"
+          ],
+          "color": "#180808",
+          "alt": "Scotland, 2025",
+          "date": "2025-05-07"
+        }
+      ]
+    },
     {
       "slug": "tromso-norway-2026",
       "title": "Tromsø",
