@@ -4,7 +4,7 @@
 // No Worker script: Cloudflare serves dist/ directly, honouring public/_headers.
 {
   "$schema": "../../node_modules/wrangler/config-schema.json",
-  "name": "nachogoca-home",
+  "name": "nachogoca-com",
   "compatibility_date": "2026-11-01",
   "assets": {
     "directory": "./dist",
